@@ -1,0 +1,121 @@
+// В этом файле должны быть стили для БЭМ-блока sections, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sections {
+
+  background-color: #f1f1f1;
+  padding-top: 62px;
+  padding-bottom: 67px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    height: 206px;
+    width: 24%;
+    margin-right: 15px;
+    margin-bottom: 17px;
+    border-bottom: 4px solid #e02d33;
+
+    &:hover .sections__desc-links {
+      transform: translateY(0);
+      transition: .5s;
+    }
+
+    &:nth-of-type(4n+4) {
+      margin: 0;
+    }
+  }
+
+  &__item-img {
+    width: 100%;
+  }
+
+  &__item-link {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #363636;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding-left: 18px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    font-weight: 700;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      background-color: #e02d33;
+      color: #ffffff;
+      transition: .5s;
+    }
+
+
+  }
+
+  &__desc-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 148px;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    background-color: #ffffff;
+    transform: translateY(-100%);
+    transition: .5s;
+  }
+
+  &__desc-link {
+    position: relative;
+    padding-left: 55px;
+    text-decoration: none;
+    color: #757575;
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: 24px;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 25px;
+      top: 50%;
+      width: 12px;
+      height: 14px;
+      background-image: url("../img/triangle-gray.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: rotate(-90deg) translateX(50%);
+    }
+
+    &:hover,
+    &:focus {
+      color: #e02d33;
+    }
+
+    &--all {
+
+      &::before{
+        background-image: none;
+      }
+    }
+  }
+
+}

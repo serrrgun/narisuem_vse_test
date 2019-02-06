@@ -1,0 +1,84 @@
+// В этом файле должны быть стили для БЭМ-блока main-nav, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-nav {
+
+  display: flex;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  &__wrapper {
+    width: 80%;
+
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-right: 5.2%;
+  }
+
+  &__item a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      color: #e02d33;
+      transition: .5s;
+    }
+  }
+
+  &__item--active {
+    padding-right: 15px;
+    background-image: url("../img/triangle.svg");
+    background-position: right center;
+    background-size: 10px 11px;
+    background-repeat: no-repeat;
+  }
+
+  &__item--active a {
+    color: #e02d33;
+  }
+
+  &__stock {
+    display: flex;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 19px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fefefe;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #e02d33;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      color: #e02d33;
+      background-color: #fefefe;
+      transition: .5s;
+    }
+  }
+
+}

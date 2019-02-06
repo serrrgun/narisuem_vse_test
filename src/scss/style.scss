@@ -1,0 +1,27 @@
+// Это диспетчер подключений, тут не должно быть ничего, кроме импортов
+
+// Глобальные подключения
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'normalize.scss';
+@import 'global.scss';
+
+// Cтили плагинов
+
+@import '../scss/plagins/flexslider.scss';
+
+// Растровый спрайт: примеси-генераторы правил
+@import './src/blocks/sprite-png/sprite-png.scss';
+@include sprites($spritesheet-sprites); // Генератор селекторов для всех картинок спрайта
+
+// БЭМ-блоки. Один БЭМ-блок = 1 файл. ВСЕГДА.
+@import './src/blocks/page/page.scss';
+@import './src/blocks/main-nav/main-nav.scss';
+@import './src/blocks/header/header.scss';
+@import './src/blocks/logo/logo.scss';
+@import './src/blocks/search/search.scss';
+@import './src/blocks/user-block/user-block.scss';
+@import './src/blocks/offer/offer.scss';
+@import './src/blocks/offer-slider/offer-slider.scss';
+@import './src/blocks/offer-banner/offer-banner.scss';
+@import './src/blocks/sections/sections.scss';
