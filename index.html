@@ -21,7 +21,7 @@
           <li class="header__contact-item header__contact-item--time"><a class="header__contact-link header__contact-link--time" href="#">Время работы: 9.00-18.00</a></li>
           <li class="header__contact-item header__contact-item--shipping"><a class="header__contact-link header__contact-link--shipping" href="#">Бесплатная доставка по РБ</a></li>
           <li class="header__contact-item header__contact-item--address"><a class="header__contact-link header__contact-link--address" href="#">Адреса складов</a></li>
-          <li class="header__contact-item header__contact-item--tel"><a class="header__contact-link header__contact-link--tel" href="+375 29 518 44 99">+375 29 518 44 99 &emsp; +375 29 644 05 83</a></li>
+          <li class="header__contact-item header__contact-item--tel"><a class="header__contact-link header__contact-link--tel" href="tel: 375 29 518 44 99">+375 29 518 44 99 &emsp; +375 29 644 05 83</a></li>
           <li class="header__contact-item header__contact-item--call"><a class="header__contact-link header__contact-link--call" href="#">Заказать звонок</a></li>
         </ul>
       </div>
@@ -158,19 +158,150 @@
     <div class="container">
       <div class="products__header">
         <h2 class="products__header-title title-big">Товары</h2>
-        <div class="products__header-buttons"><button class="products__header-button" type="button">Рекомендуем</button><button class="products__header-button" type="button">Хиты продаж</button><button class="products__header-button" type="button">Новинки</button><button class="products__header-button" type="button">Скидки</button></div>
+        <div class="products__header-buttons"><button class="products__header-button products__header-button--common" type="button">Рекомендуем</button><button class="products__header-button products__header-button--hit" type="button">Хиты продаж</button><button class="products__header-button products__header-button--new" type="button">Новинки</button><button class="products__header-button products__header-button--sale" type="button">Скидки</button></div>
       </div>
       <div class="products-carousel flexslider carousel">
         <ul class="products-carousel__list slides">
-          <li>
-            <div class="products-carousel__item"><span class="products-carousel__item-new">Новинка</span>
+          <li class="products-carousel__sort products-carousel--new">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--new">Новинка</span>
               <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_1.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong">30.34 руб.</span>
                 <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
-                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"></button></div>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--hit">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--hit">Хит</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_2.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--sale">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--sale">Скидка</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_3.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--common">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--common"></span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_4.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--new">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--new">Новинка</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_1.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong">30.34 руб.</span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--hit">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--hit">Хит</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_2.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--sale">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--sale">Скидка</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_3.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--common">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--common"></span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_4.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--new">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--new">Новинка</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_1.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong">30.34 руб.</span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--hit">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--hit">Хит</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_2.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--sale">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--sale">Скидка</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_3.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--common">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--common"></span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_4.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--new">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--new">Новинка</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_1.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong">30.34 руб.</span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--hit">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--hit">Хит</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_2.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--sale">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--sale">Скидка</span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_3.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
+              </div>
+          </li>
+          <li class="products-carousel__sort products-carousel--common">
+            <div class="products-carousel__item"><span class="products-carousel__item-category products-carousel__item-category--common"></span>
+              <div class="products-carousel__item-img-wrapper"><img class="products-carousel__item-img" src="img/product_4.png" title="товар_1"/></div><span class="products-carousel__item-cost">28.20 руб.</span><span class="products-carousel__item-cost products-carousel__item-cost--wrong"></span>
+                <p class="products-carousel__item-desc"> Набор подсвечников деревянных на подставке (3 шт.)</p>
+                <div class="products-carousel__item-bascket"><button class="products-carousel__item-bascket-link" type="button">В корзину</button><button class="products-carousel__item-bascket-like" type="button"><i class="far fa-heart"></i></button></div>
               </div>
           </li>
         </ul>
-      </div>
+      </div><a class="products__button btn" href="#" title="Посмотреть еще">Посмотреть еще</a>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <h2 class="advantages__title title-big">С нами легко и выгодно!</h2>
+      <p class="advantages__desc">Выбирая нас – Вы выбираете надежных друзей, которые сделают все от них зависящее, чтобы Вы были довольны нашим <br> сервисом и обязательно еще много раз вернулись к нам)</p>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--supplies">Прямые поставки <br> из России и Китая</li>
+          <li class="advantages__item advantages__item--price">Низкая цена,<br> указання с учетом НДС</li>
+          <li class="advantages__item advantages__item--manager">Персональный<br> менеджер</li>
+        </ul>
+    </div>
+  </section>
+  <section class="news">
+    <div class="container">
+      <h2 class="news__title title-big">Свежие новости<ul class="news__list">
+          <li class="news__item">
+            <div class="news__item-img-wrapper"><img class="news__item-img-wrapper" src="img/new-year-presents.png" title="Выбираем подарки к Новому году"/></div>
+              <div class="new__desc">
+                <p class="news__date"><i class="far fa-clock"></i> 10 октября 2018</p>
+                <h3 class="news__item-title">Выбираем подарки к Новому году</h3>
+                <p class="news__item-desc">10 крутых подарков на все случаи жизни. Большой выбор в нашем магазине.</p>
+              </div>
+          </li>
+        </ul>
+      </h2>
     </div>
   </section>
   <div class="page__footer-wrapper">
