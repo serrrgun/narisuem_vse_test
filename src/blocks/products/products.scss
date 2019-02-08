@@ -1,0 +1,53 @@
+// В этом файле должны быть стили для БЭМ-блока products, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.products {
+
+  padding-top: 50px;
+  padding-bottom: 65px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 35px;
+  }
+
+  &__header-title {
+    margin: 0;
+  }
+
+  &__header-button {
+    border: none;
+    background-color: transparent;
+    color: #606060;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+    transition: .5s;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #e02d33;
+      transition: .5s;
+    }
+
+    &__common {
+      color: #e02d33;
+    }
+  }
+
+  &__button {
+    width: 155px;
+  }
+}

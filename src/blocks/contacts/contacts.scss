@@ -1,0 +1,91 @@
+// В этом файле должны быть стили для БЭМ-блока contacts, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts {
+
+  width: 28%;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__tel-list {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+
+    & .fa-phone {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      transform: rotate(90deg);
+      font-size: 18px;
+
+      color: #ec3b49;
+
+    }
+  }
+
+  &__tel {
+    display: block;
+    color: #bfbfbf;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      transition: .5s;
+    }
+  }
+
+  &__mail {
+    margin-bottom: 18px;
+
+    & .fa-envelope {
+      font-size: 12px;
+      color: #ec3b49;
+      margin-right: 34px;
+    }
+
+    & a {
+      font-size: 14px;
+      color: #bfbfbf;
+      font-weight: 400;
+      text-decoration: none;
+      transition: .5s;
+
+      &:hover,
+      &:focus {
+        color: #ffffff;
+        transition: .5s;
+      }
+    }
+  }
+
+  &__button {
+    display: block;
+    text-align: center;
+    width: 189px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    margin-left: 50px;
+    border-radius: 3px;
+    background-color: #ec3b49;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      color: #ec3b49;
+      background-color: #ffffff;
+      transition: .5s;
+    }
+  }
+}

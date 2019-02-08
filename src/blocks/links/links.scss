@@ -1,0 +1,36 @@
+// В этом файле должны быть стили для БЭМ-блока links, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.links {
+
+  width: 23%;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #bfbfbf;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px dashed #bfbfbf;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      color: #ec3b49;
+      border-bottom: 1px dashed #ec3b49;
+      transition: .5s;
+    }
+  }
+}

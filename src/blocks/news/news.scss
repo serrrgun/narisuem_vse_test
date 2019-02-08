@@ -1,0 +1,104 @@
+// В этом файле должны быть стили для БЭМ-блока news, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.news {
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 38px;
+    list-style: none;
+  }
+
+  &__item {
+    width: 29.30%;
+    min-height: 438px;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    border-bottom: 3px solid #e02d33;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 38px 0px rgba(115,115,115,1);
+      transition: .5s;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 42px;
+    text-align: center;
+  }
+
+  &__item-img-wrapper {
+    font-size: 12px;
+    max-height: 254px;
+  }
+
+  &__item-img {
+    height: 254px;
+  }
+
+  &__desc{
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 34px;
+    text-align: left;
+  }
+
+  &__date {
+    position: relative;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #a8a7a7;
+
+
+    & .fa-clock {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+      margin-right: 5px;
+      color: #e02d33;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #252525;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__item-desc {
+    margin: 0;
+    color: #7b7b7b;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  &__button {
+    width: 155px;
+  }
+}

@@ -1,0 +1,13 @@
+mixin products()
+  section.products
+    .container
+      .products__header
+        h2.products__header-title.title-big Товары
+        .products__header-buttons
+          button(type="button").products__header-button.products__header-button--common Рекомендуем
+          button(type="button").products__header-button.products__header-button--hit Хиты продаж
+          button(type="button").products__header-button.products__header-button--new Новинки
+          button(type="button").products__header-button.products__header-button--sale Скидки
+      +products-carousel()
+      a(href="#", title="Посмотреть еще").products__button.btn Посмотреть еще
+

@@ -1,0 +1,101 @@
+// В этом файле должны быть стили для БЭМ-блока social, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.social {
+
+  width: 30%;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  &__icon {
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #ec3b49;
+    border-radius: 50%;
+    margin-right: 9px;
+    transition: .5s;
+
+    &--twitter {
+      background-image: url("../img/twitter-icon.png");
+      background-repeat: no-repeat;
+      background-size: 15px 12px;
+      background-position: center center;
+    }
+
+    &--vk {
+      background-image: url("../img/vk-icon.png");
+      background-repeat: no-repeat;
+      background-size: 19px 11px;
+      background-position: center center;
+    }
+
+    &--google {
+      background-image: url("../img/google-icon.png");
+      background-repeat: no-repeat;
+      background-size: 24px 14px;
+      background-position: center center;
+    }
+
+    &--fb {
+      background-image: url("../img/facebook-icon.png");
+      background-repeat: no-repeat;
+      background-size: 8px 16px;
+      background-position: center center;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ec3b49;
+      transition: .5s;
+    }
+  }
+
+  &__desc {
+    display: inline-block;
+    color: #bfbfbf;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  &__studio {
+    margin: 0;
+    padding-left: 32px;
+    background-image: url("../img/studio-icon.png");
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    background-position: left center;
+    color: #bfbfbf;
+    font-size: 14px;
+    line-height: 22px;
+
+    & a {
+      color: #bfbfbf;
+      font-size: 14px;
+      line-height: 22px;
+      transition: .5s;
+
+      &:hover,
+      &:focus {
+        color: #ffffff;
+        transition: .5s;
+      }
+    }
+  }
+}

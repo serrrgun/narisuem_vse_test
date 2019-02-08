@@ -1,0 +1,46 @@
+mixin news()
+  section.news
+    .container
+      h2.news__title.title-big Свежие новости
+
+      -
+          var news = [
+            {
+              'imgLink' : 'img/new-year-presents.png',
+              'imgTitle' : 'Выбираем подарки к Новому году',
+              'newsDate' : '10 октября 2018',
+              'newsTitle' : 'Выбираем подарки <br> к Новому году',
+              'newsDesc' : '10 крутых подарков на все случаи жизни. Большой выбор в нашем магазине.'
+            },
+
+            {
+              'imgLink' : 'img/leaf.png',
+              'imgTitle' : 'Листопад скидок!',
+              'newsDate' : '10 октября 2018',
+              'newsTitle' : 'Листопад скидок!',
+              'newsDesc' : 'Осеннее обновление ассортимента товара по вкусным ценам только у нас.'
+            },
+
+            {
+              'imgLink' : 'img/ways.png',
+              'imgTitle' : 'Новые способы доставки товаров',
+              'newsDate' : '10 октября 2018',
+              'newsTitle' : 'Новые способы доставки товаров',
+              'newsDesc' : 'Мы знаем как важно, чтобы покупки приходили вовремя и быстро.'
+            },
+
+          ]
+
+      ul.news__list
+        each val in news
+          li.news__item
+            a(href="#").news__link
+              .news__item-img-wrapper
+                img(src=val.imgLink, title=val.imgTitle).news__item-img
+              .news__desc
+                p.news__date!= val.newsDate
+                  i.far.fa-clock
+                h3.news__item-title!= val.newsTitle
+                p.news__item-desc 10 крутых подарков на все случаи жизни. Большой выбор в нашем магазине.
+
+      a(href="#", title="Посмотреть еще").news__button.btn Посмотреть еще

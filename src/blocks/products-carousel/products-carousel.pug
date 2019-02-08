@@ -1,0 +1,169 @@
+mixin products-carousel()
+  .products-carousel.flexslider.carousel
+    ul.products-carousel__list.slides
+      -
+        var cards = [
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--new',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--new',
+            'category' : 'Новинка',
+            'img' : 'img/product_1.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '30.34 руб.',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--hit',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--hit',
+            'category' : 'Хит',
+            'img' : 'img/product_2.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--sale',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--sale',
+            'category' : 'Скидка',
+            'img' : 'img/product_3.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--common',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--common',
+            'category' : '',
+            'img' : 'img/product_4.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--new',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--new',
+            'category' : 'Новинка',
+            'img' : 'img/product_1.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '30.34 руб.',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--hit',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--hit',
+            'category' : 'Хит',
+            'img' : 'img/product_2.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--sale',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--sale',
+            'category' : 'Скидка',
+            'img' : 'img/product_3.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--common',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--common',
+            'category' : '',
+            'img' : 'img/product_4.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--new',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--new',
+            'category' : 'Новинка',
+            'img' : 'img/product_1.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '30.34 руб.',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--hit',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--hit',
+            'category' : 'Хит',
+            'img' : 'img/product_2.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--sale',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--sale',
+            'category' : 'Скидка',
+            'img' : 'img/product_3.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--common',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--common',
+            'category' : '',
+            'img' : 'img/product_4.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--new',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--new',
+            'category' : 'Новинка',
+            'img' : 'img/product_1.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '30.34 руб.',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--hit',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--hit',
+            'category' : 'Хит',
+            'img' : 'img/product_2.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--sale',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--sale',
+            'category' : 'Скидка',
+            'img' : 'img/product_3.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+          {
+            'sortclass' : 'products-carousel__sort products-carousel--common',
+            'categoryClass' : 'products-carousel__item-category products-carousel__item-category--common',
+            'category' : '',
+            'img' : 'img/product_4.png',
+            'imgTitle' : 'товар_1',
+            'costClass' : 'products-carousel__item-cost products-carousel__item-cost--wrong',
+            'costOld' : '',
+          },
+        ];
+
+      each val in cards
+        li(class=val.sortclass)
+          .products-carousel__item
+            span(class=val.categoryClass)!= val.category
+            .products-carousel__item-img-wrapper
+              img(src=val.img, title=val.imgTitle).products-carousel__item-img
+            span.products-carousel__item-cost 28.20 руб.
+            span(class=val.costClass)!=val.costOld
+            p.products-carousel__item-desc  Набор подсвечников деревянных на подставке (3 шт.)
+            .products-carousel__item-bascket
+              button(type="button").products-carousel__item-bascket-link В корзину
+              button(type="button").products-carousel__item-bascket-like
+                i.far.fa-heart
+
+
+
+
+
