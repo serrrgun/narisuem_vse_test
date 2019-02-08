@@ -16,11 +16,18 @@
 
   &__desc {
     margin: 0;
+    margin-left: 18px;
     align-self: flex-end;
     color: #a2a2a2;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 12px;
+  }
+
+  & a {
+    display: block;
+    width: 100%;
+    line-height: 0;
   }
 
 }

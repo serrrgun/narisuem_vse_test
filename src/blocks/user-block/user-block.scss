@@ -6,11 +6,12 @@
 
   display: flex;
   align-self: center;
-  padding-left: 22px;
+  padding-left: 25px;
+  padding-top: 8px;
   background-image: url("../img/profile.png");
   background-repeat: no-repeat;
   background-size: 16px 14px;
-  background-position: left center;
+  background-position: left 10px;
 
   &__login {
     position: relative;
@@ -42,16 +43,16 @@
   }
 
   &__login:nth-of-type(2) {
-    margin-right: 15%;
+    margin-right: 16.5%;
   }
 
   &__basket {
     display: flex;
-    padding-left: 22px;
+    padding-left: 32px;
     background-image: url("../img/shopping-basket.png");
     background-repeat: no-repeat;
-    background-size: 16px 14px;
-    background-position: left center;
+    background-size: 20px 18px;
+    background-position: left -1px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
