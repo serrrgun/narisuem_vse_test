@@ -16,27 +16,29 @@
 <body>
   <header class="header">
     <section class="header__contact">
+      <h2 class="visually-hidden">Контакты и время работы</h2>
       <div class="container">
         <ul class="header__contact-list">
           <li class="header__contact-item header__contact-item--time"><a class="header__contact-link header__contact-link--time" href="#">Время работы: 9.00-18.00</a></li>
           <li class="header__contact-item header__contact-item--shipping"><a class="header__contact-link header__contact-link--shipping" href="#">Бесплатная доставка по РБ</a></li>
           <li class="header__contact-item header__contact-item--address"><a class="header__contact-link header__contact-link--address" href="#">Адреса складов</a></li>
-          <li class="header__contact-item header__contact-item--tel"><a class="header__contact-link header__contact-link--tel" href="tel: 375 29 518 44 99">+375 29 518 44 99 &emsp; +375 29 644 05 83</a></li>
+          <li class="header__contact-item header__contact-item--tel"><a class="header__contact-link header__contact-link--tel" href="tel:+375 29 518 44 99">+375 29 518 44 99 &emsp; +375 29 644 05 83</a></li>
           <li class="header__contact-item header__contact-item--call"><a class="header__contact-link header__contact-link--call" href="#">Заказать звонок</a></li>
         </ul>
       </div>
     </section>
-    <section class="container">
+    <div class="container">
       <div class="header__description">
-        <div class="logo"><img class="logo__icon" src="img/logo.png" title="Логотип"/>
-          <p class="logo__desc">Оптовая продажа для дома, работы и отдыха</p>
+        <div class="logo"><a href="#" title="логотип"><img class="logo__icon" src="img/logo.png" title="Логотип"/></a>
+          <h1 class="logo__desc">Оптовая продажа для дома, работы и отдыха</h1>
         </div>
         <div class="search"><input class="search__input" type="text" placeholder="Поиск"/><i class="fas fa-search"></i></div>
         <div class="user-block"><a class="user-block__login" href="#"> вход&nbsp;</a><span>или&nbsp;</span><a class="user-block__login" href="#"> регистрация</a><a class="user-block__basket" href="#"> Корзина&nbsp;<span>(10)</span></a></div>
       </div>
-    </section>
+    </div>
   </header>
   <section class="main-nav container">
+    <h2 class="visually-hidden">Главное меню</h2>
     <nav class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="#" title="главная">главная</a></li>
@@ -77,6 +79,7 @@
     <div class="offer-banner"><a class="offer-banner__link" href="#"><h2 class="offer-banner__title"> Halloween <br> SALE</h2><span class="offer-banner__desc">Страшно большие скидки</span></a><a class="offer-banner__link" href="#"><h2 class="offer-banner__title"> Товары для мам <br> и малышей</h2><span class="offer-banner__desc">По выгодным ценам</span></a></div>
   </section>
   <section class="sections">
+    <h2 class="visually-hidden"> Разделы</h2>
     <div class="container">
       <ul class="sections__list">
         <li class="sections__item"><img class="sections__item-img" src="img/dishes.png" title="посуда"/><a class="sections__item-link" href="#" title="посуда">посуда</a>
@@ -291,22 +294,50 @@
   </section>
   <section class="news">
     <div class="container">
-      <h2 class="news__title title-big">Свежие новости<ul class="news__list">
-          <li class="news__item">
-            <div class="news__item-img-wrapper"><img class="news__item-img-wrapper" src="img/new-year-presents.png" title="Выбираем подарки к Новому году"/></div>
-              <div class="new__desc">
-                <p class="news__date"><i class="far fa-clock"></i> 10 октября 2018</p>
-                <h3 class="news__item-title">Выбираем подарки к Новому году</h3>
-                <p class="news__item-desc">10 крутых подарков на все случаи жизни. Большой выбор в нашем магазине.</p>
-              </div>
-          </li>
-        </ul>
-      </h2>
+      <h2 class="news__title title-big">Свежие новости</h2>
+      <ul class="news__list">
+        <li class="news__item"><a class="news__link" href="#"><div class="news__item-img-wrapper"><img class="news__item-img" src="img/new-year-presents.png" title="Выбираем подарки к Новому году"/></div><div class="news__desc"><p class="news__date">10 октября 2018<i class="far fa-clock"></i></p><h3 class="news__item-title">Выбираем подарки <br> к Новому году</h3><p class="news__item-desc">10 крутых подарков на все случаи жизни. Большой выбор в нашем магазине.</p></div></a></li>
+        <li class="news__item"><a class="news__link" href="#"><div class="news__item-img-wrapper"><img class="news__item-img" src="img/leaf.png" title="Листопад скидок!"/></div><div class="news__desc"><p class="news__date">10 октября 2018<i class="far fa-clock"></i></p><h3 class="news__item-title">Листопад скидок!</h3><p class="news__item-desc">10 крутых подарков на все случаи жизни. Большой выбор в нашем магазине.</p></div></a></li>
+        <li class="news__item"><a class="news__link" href="#"><div class="news__item-img-wrapper"><img class="news__item-img" src="img/ways.png" title="Новые способы доставки товаров"/></div><div class="news__desc"><p class="news__date">10 октября 2018<i class="far fa-clock"></i></p><h3 class="news__item-title">Новые способы доставки товаров</h3><p class="news__item-desc">10 крутых подарков на все случаи жизни. Большой выбор в нашем магазине.</p></div></a></li>
+      </ul><a class="news__button btn" href="#" title="Посмотреть еще">Посмотреть еще</a>
     </div>
   </section>
-  <div class="page__footer-wrapper">
-    <div>Тут «подвал»</div>
-  </div>
+  <section class="about">
+    <div class="container">
+      <h2 class="about__title title-big">О компании “Просто”</h2>
+      <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis orci id ultricies gravida. Mauris ac leo nisl. Sed a tortor viverra, congue justo quis, scelerisque quam. Nullam a laoreet ex. Integer in eros nisi. Praesent et augue a arcu efficitur aliquet. Proin suscipit egestas pulvinar. Aliquam erat volutpat. Duis nibh nisi, vulputate eu posuere sit amet, iaculis id mi. Nulla sit amet bibendum felis.</p>
+      <p class="about__description">Donec vitae sapien urna. Donec eget ligula nibh. Praesent tincidunt blandit dignissim. Maecenas id cursus mi. Donec posuere elementum enim at condimentum. Suspendisse volutpat neque lectus, vel efficitur dui accumsan et. Aliquam nec commodo mi. Aenean ut placerat velit. Aenean mattis dictum finibus. Phasellus congue odio mauris, nec volutpat quam varius sed. Donec laoreet tincidunt mi et commodo. Mauris leo lectus, pharetra a dictum in, venenatis hendrerit justo. Maecenas eleifend tristique consectetur. Aliquam mollis sem eu blandit volutpat.</p>
+      <p class="about__description">Donec commodo facilisis magna. Nunc posuere odio eu nibh ultrices elementum. Mauris sit amet elit in erat vestibulum sodales. Integer convallis porta ornare. Curabitur bibendum ante ligula, vel blandit tellus sollicitudin ac. Aenean commodo vehicula purus rhoncus aliquam. Cras interdum sapien nec justo fermentum imperdiet. Ut faucibus, mauris et fringilla ultrices, justo ante ultrices quam, vitae bibendum est purus eget ex. Proin hendrerit consectetur sapien sed pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet nibh nec justo lacinia tristique vitae in libero. Morbi vitae ante eu mi consectetur sollicitudin. Quisque finibus, nibh eu euismod venenatis, diam felis blandit</p>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <section class="social">
+        <h2 class="social__title footer-title">Мы в соцсетях</h2>
+        <ul class="social__icons">
+          <li class="social__icon"><a class="social__link social__link--twitter" href="#" title="твиттер"></a></li>
+          <li class="social__icon"><a class="social__link social__link--vk" href="#" title="вконтакте"></a></li>
+          <li class="social__icon"><a class="social__link social__link--google" href="#" title="гугл акккаунт"></a></li>
+          <li class="social__icon"><a class="social__link social__link--fb" href="#" title="фейсбук"></a></li>
+        </ul><span class="social__desc"> &copy; 2018 г., ООО «Цунами цен» Свидетельство о государственной регистрации № 391604243 от 08.06.2012г. выдано Новополоцким ГИК</span>
+        <p class="social__studio"> Разработка сайта &ensp;<a href="http://narisuemvse.by/"> Narisuemvse.by</a></p>
+      </section>
+      <section class="links">
+        <h2 class="links__title footer-title"> Полезные ссылки</h2>
+        <ul class="links__list">
+          <li><a class="links__item" href="#" title="Покупателям">Покупателям</a></li>
+          <li><a class="links__item" href="#" title="Покупателям">Поставщикам</a></li>
+          <li><a class="links__item" href="#" title="Покупателям">Арендодателям</a></li>
+          <li><a class="links__item" href="#" title="Покупателям">Политика конфидециальност</a></li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title footer-title">Не можете определиться с <br> выбором? Мы поможем!</h2>
+          <div class="contacts__tel-list"><a class="contacts__tel" href="tel: +375 (29) 518 44 99" title="+375 (29) 518 44 99">+375 (29) 518 44 99</a><a class="contacts__tel" href="tel: +375 (29) 644 05 83" title="+375 (29) 644 05 83">+375 (29) 644 05 83</a><i class="fas fa-phone"></i></div>
+          <div class="contacts__mail"><i class="fas fa-envelope"></i><a href="#" title="mail"> info@prosto.by</a></div><a class="contacts__button" href="#" title="Отправить сообщение">Отправить сообщение</a>
+      </section>
+    </div>
+  </footer>
   <script src="js/script.min.js"></script>
 </body>
 
