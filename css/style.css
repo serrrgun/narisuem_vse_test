@@ -1263,7 +1263,7 @@ img {
       color: #e02d33;
       -webkit-transition: .5s;
       transition: .5s; }
-    .products__header-button__common {
+    .products__header-button--common {
       margin-right: 60px;
       color: #e02d33; }
   .products__button {
